@@ -63,7 +63,7 @@ if uploaded_files:
         prediction = model.predict(data_reshaped)
 
         # Determine class
-        predicted_class = f'Good Outcome - High chances of recovery - CPC Score: {random.randint(1, 2)}' if prediction[0][0] >= 0.5 else f'Poor Outcome - Poor chances of recovery - CPC Score: {random.randint(3,5)}'
+        predicted_class = f'Good Outcome for the patient - High chances of recovery - CPC Score: {random.randint(1, 2)}' if prediction[0][0] >= 0.5 else f'Poor Outcome for the patient- Poor chances of recovery - CPC Score: {random.randint(3,5)}'
         
 
         # Display results
